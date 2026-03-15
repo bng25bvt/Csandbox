@@ -1,0 +1,59 @@
+/*parent container*/
+.parent{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+/*child elements*/
+.child-one, .child-two, .child-three, .child-four, .child-five, .child-six, .child-seven, .child-eight{
+  font-size: 100px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 50px;
+}
+.child-one:hover, .child-two:hover, .child-three:hover, .child-four:hover, .child-five:hover, .child-six:hover, .child-seven:hover, .child-eight:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.child-one{
+  background-color: red;
+  order: 2;
+  flex-grow: 1;
+}
+.child-two{
+  background-color: orange;
+  order: 1;
+  flex-shrink: 1;
+}
+.child-three{
+  background-color: yellow;
+  order: 4;
+  flex-grow: 3;
+}
+.child-four{
+  background-color: green;
+  order: 3;
+  flex-grow: 1;
+}
+.child-five{
+  background-color: blue;
+  flex-grow: 1;
+  order: 6;
+}
+.child-six{
+  background-color: indigo;
+  order: 5;
+  flex-grow: 1;
+}
+.child-seven{
+  background-color: lavender;
+  order: 8;
+  flex-grow: 1;
+}
+.child-eight{
+  background-color: violet;
+  order: 7;
+  flex-grow: 1;
+}
